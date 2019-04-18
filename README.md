@@ -53,6 +53,7 @@ However, in some cases these string contain logic to be evaluated at runtime, EG
 
 I wrote a [quick hack](hack.go) to see what progress could be made with regular expressions only.
 Ultimately much of the codebase is very different than what one would write in Go.
+However, parsing the struct packing strings into Go serialization code would be a powerful start.
 
 ## Samba
 [Samba](https://github.com/samba-team/samba) is interesting for a couple of reasons.
