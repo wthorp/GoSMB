@@ -18,6 +18,8 @@ This document is laying out a plan for implementing an SMB server entirely in Go
 ## Reference texts
 * https://en.wikipedia.org/wiki/Server_Message_Block
 * https://en.wikipedia.org/wiki/NetBIOS
+* https://www.samba.org/ftp/tridge/misc/french_cafe.txt
+* https://www.samba.org/ftp/samba/specs/
 * TODO:  more here
 
 ## Minimum viable target
