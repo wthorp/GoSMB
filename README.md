@@ -53,34 +53,15 @@ In most cases, this struct syntax ports trivially, EG:
 However, in some cases these string contain logic to be evaluated at runtime, EG:
 `('OutputOffset','<L=(self.SIZE + 64 + len(self["AlignPad"]) + self["InputCount"])')`
 
-I wrote a [quick hack](hack.go) to see what progress could be made with regular expressions only.
-Ultimately much of the codebase is very different than what one would write in Go.
-However, parsing the struct packing strings into Go serialization code would be a powerful start.
+I wrote an [ugly hack](hack.go.old) to see what progress could be made with regular expressions only.
+Its a lot of work, and its probably easier to understand and reimplement than do a naive port of the code.
 
-## Samba
-[Samba](https://github.com/samba-team/samba) is interesting for a couple of reasons.
+## Reference implementation that might be better options for hand-porting, but that would be terrible for transpiling because their copy-left licenses aren't the kind of thing a Go developer would do
+
+### [Samba](https://github.com/samba-team/samba) is interesting for a couple of reasons.
 1. Its the most well known and thus probably best tested open source SMB server.
-2. Despite the clunkiness of C code, it may transpile more cleanly to Go.
-3. [c2go](https://github.com/andybalholm/c2go) would be amazing, but [SWIG](http://www.swig.org/) etc may help
+2. [c2go](https://github.com/andybalholm/c2go) would be amazing, but [SWIG](http://www.swig.org/) etc may help
 
-### Transpiling with C2Go
-
-Not yet attempted.  C2Go uses Clang's AST API, which requires knowing the build process particulars.
-Previous attempts at using C2Go made me think I effectively needed to create a single C file first.
-
-### Hand Porting
-
-Not yet attempted.
-
-## JCIFS
-[JCIFS](https://www.jcifs.org/)
-1. Hey, it's Java.  I don't know, maybe that means its well structured.
+### [JCIFS](https://www.jcifs.org/)
+1. Hey, it's Java!  I don't know, maybe that means its well structured?
 2. Maybe there's a [JSweet](http://www.jsweet.org/) + [godzilla](https://github.com/jingweno/godzilla) path?
-
-### Transpiling with JSweet and Godzilla
-
-This seems a little wishful.  Not yet attempted.
-
-### Hand Porting
-
-Note yet attempted.

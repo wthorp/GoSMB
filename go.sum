@@ -4,3 +4,7 @@ github.com/wthorp/gosh v0.0.0-20201227205056-e68c86e0eb0f h1:d9j1xHe5ZgVuZLYk9oW
 github.com/wthorp/gosh v0.0.0-20201227205056-e68c86e0eb0f/go.mod h1:8SUwtSMxyp5PFaKxuesZzHFKK+bAfGQnxOXY9Y8ZjBw=
 github.com/wthorp/gosh v0.0.0-20201227211608-9a322b7d3a3e h1:APKcNUw8PyGarPJyEttlvw3D+zgCdnFQ8c7fg/QtZjc=
 github.com/wthorp/gosh v0.0.0-20201227211608-9a322b7d3a3e/go.mod h1:8SUwtSMxyp5PFaKxuesZzHFKK+bAfGQnxOXY9Y8ZjBw=
+github.com/wthorp/gosh v0.0.0-20201228014255-78ba207c550c h1:8pqedegjJQ1jnG84PC+5SnBfy7vazq8IT5twnugU4CA=
+github.com/wthorp/gosh v0.0.0-20201228014255-78ba207c550c/go.mod h1:8SUwtSMxyp5PFaKxuesZzHFKK+bAfGQnxOXY9Y8ZjBw=
+github.com/wthorp/gosh v0.0.0-20201228021454-bc7ff40937f1 h1:qCwbzJVRtIGQWBTRrfGpowHxmb84DNm23Hp7dZYAiAM=
+github.com/wthorp/gosh v0.0.0-20201228021454-bc7ff40937f1/go.mod h1:8SUwtSMxyp5PFaKxuesZzHFKK+bAfGQnxOXY9Y8ZjBw=
