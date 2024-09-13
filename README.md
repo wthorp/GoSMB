@@ -3,18 +3,18 @@ A work-in-progress SMB server written in Go.
 I hope to dust this off after years of neglect.
 
 ## Design Goals
-Permissive MIT-style licensing.
-Support for SMB over TCP and eventually QUIC.
-Compatibility with latest MacOS and Windows OS.
-Support for some secure type of login in addition to guest.
-Aggressive upgrading negotitation of the most recent protocols which support the above goals.
-Not implementing any features not necessary to obtain the above goals.
+* Permissive MIT-style licensing.
+* Support for SMB over TCP and eventually QUIC.
+* Compatibility with latest MacOS and Windows OS.
+* Support for some secure type of login in addition to guest.
+* Aggressive upgrading negotitation of the most recent protocols which support the above goals.
+* Not implementing any features not necessary to obtain the above goals.
 
 ## Methodology
 SMB contains a lot of legacy features and backward compatibility logic.  Its difficult to
-develop working parts in situ without falling back to some functional complete solution.  
-There's a temptation to create a one-shot port of existing solutions, but differences in 
-3rd party libraries make this nearly impossible.
+develop working parts in situ without falling back to some functional complete solution.  There's 
+a temptation to create a one-shot port of existing solutions, but differences in 3rd party 
+libraries make this nearly impossible.
 
 To make this easier and avoid needing external tools, the methology employed here is to create
 a dumb proxy first.  One by one, different parts of the protocol may be swapped out, thus using 
