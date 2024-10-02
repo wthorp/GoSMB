@@ -21,23 +21,24 @@ a dumb proxy first.  One by one, different parts of the protocol may be swapped 
 the strangler pattern to create a full SMB implementation and eventually removing the proxy.
 
 ## Likely Relavent Go Code
-* [stacktitan/smb](https://github.com/stacktitan/smb)
-* [alessandrovaprio/go-smb-client](https://github.com/alessandrovaprio/go-smb-client)
-* [Amzza0x00/go-impacket](https://github.com/Amzza0x00/go-impacket)
-* [CloudSoda/go-smb2](https://github.com/CloudSoda/go-smb2)
-* [gavriva/smb2](https://github.com/gavriva/smb2)
-* [gentlemanautomaton/smb](https://github.com/gentlemanautomaton/smb)
-* [hirochachacha/go-smb2](https://github.com/hirochachacha/go-smb2)
-* [hy05190134/smb2proxy](https://github.com/hy05190134/smb2proxy)
-* [izouxv/smbapi](https://github.com/izouxv/smbapi)
-* [PichuChen/simba](https://github.com/PichuChen/simba)
-* [Xmister/libsmb2-go](https://github.com/Xmister/libsmb2-go)
-* [xpn/ntlmquic](https://github.com/xpn/ntlmquic)
-* [Azure/go-ntlmssp](https://github.com/Azure/go-ntlmssp)
-* [jcmturner/gokrb5](https://github.com/jcmturner/gokrb5)
+* [stacktitan/smb](https://github.com/stacktitan/smb) — “An SMB library in Go ” — client only, last update 5y ago
+* [alessandrovaprio/go-smb-client](https://github.com/alessandrovaprio/go-smb-client) — “Go Library for Samba2 Exported with C bindings” — client only, uses hirochachacha/go-smb2
+* [Amzza0x00/go-impacket](https://github.com/Amzza0x00/go-impacket) — Go port of parts of fortra/impacket
+* [CloudSoda/go-smb2](https://github.com/CloudSoda/go-smb2) — “Client implementation of the SMB 2 & 3 protocols”
+* [gavriva/smb2](https://github.com/gavriva/smb2) — “Server-side implementation of SMB2/3 protocol in Go” — last update 8y ago
+* [gentlemanautomaton/smb](https://github.com/gentlemanautomaton/smb) — “Server Message Block version 2 and 3 protocol library for Go” / “It is not yet suitable for use.”
+* [hirochachacha/go-smb2](https://github.com/hirochachacha/go-smb2) — “SMB2/3 client library written in Go.”
+* [hy05190134/smb2proxy](https://github.com/hy05190134/smb2proxy) — “smb2 proxy for golang” — depends on a fork of stacktitan/smb
+* [izouxv/smbapi](https://github.com/izouxv/smbapi) — “smbapi is a pure golang smb server library” / “!!! NOT MAINTEN”
+* [PichuChen/simba](https://github.com/PichuChen/simba) — “Simba is a pure golang smb server library”
+* [Xmister/libsmb2-go](https://github.com/Xmister/libsmb2-go) — “Go bindings for libsmb2 SMBv2&3 C library”
+* [xpn/ntlmquic](https://github.com/xpn/ntlmquic) — “POC tools for exploring SMB over QUIC protocol”
+* [Azure/go-ntlmssp](https://github.com/Azure/go-ntlmssp) — “NTLM/Negotiate authentication over HTTP”
+* [jcmturner/gokrb5](https://github.com/jcmturner/gokrb5) — “Pure Go Kerberos library for clients and services”
+* [macos-fuse-t/go-smb2](https://github.com/macos-fuse-t/go-smb2) — “Lightweight SMB2/3 Server implemented in go” — recent work from the osxfuse/fuse-t author — _AGPL_
 
 ## Non-Go SMB Server implementations
-* https://github.com/SecureAuthCorp/impacket
+* https://github.com/fortra/impacket — A collection of Python classes for working with network protocols
 * https://github.com/samba-team/samba
 * https://www.jcifs.org/
 * https://github.com/cifsd-team/ksmbd
